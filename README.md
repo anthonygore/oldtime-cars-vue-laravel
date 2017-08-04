@@ -1,4 +1,4 @@
-# Oldtime Cars
+# oldtime-cars-vue-laravel
 
 An app to demonstrate a design pattern for sending data between a Vue SPA and Laravel that minimises unnecessary AJAX.
 
