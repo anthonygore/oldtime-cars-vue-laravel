@@ -1,10 +1,9 @@
-let initialState = JSON.parse(window.__INITIAL_STATE__);
 import axios from 'axios';
 
 let getData = function(to) {
   return new Promise((resolve, reject) => {
-    let useApi = to.path !== initialState.path;
-    if (useApi) {
+    let initialState = JSON.parse(window.__INITIAL_STATE__) || {};
+    if (!initialState.path || to.path !== initialState.path) {
       axios.get(`/api${to.path}`).then(({ data }) => {
         resolve(data);
       })
