@@ -18,11 +18,6 @@
             return {
                 cars: null
             }
-        },
-        methods: {
-            setData(data) {
-                this.cars = data.cars;
-            }
         }
     };
 </script>

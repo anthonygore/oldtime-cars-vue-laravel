@@ -1,5 +1,5 @@
 # Oldtime Cars
 
-A demo app to demonstrate a design pattern for sending data between Vue and Laravel that minimises use of unnecessary AJAX.
+An app to demonstrate a design pattern for sending data between a Vue SPA and Laravel that minimises unnecessary AJAX.
 
 See this article for an explanation.

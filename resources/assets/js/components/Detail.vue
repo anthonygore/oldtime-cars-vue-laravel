@@ -17,13 +17,6 @@
                 url: null,
                 price: null
             }
-        },
-        methods: {
-            setData(data) {
-                this.name = data.name;
-                this.url = data.url;
-                this.price = data.price;
-            }
         }
     };
 </script>

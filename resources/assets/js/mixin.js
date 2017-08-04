@@ -17,7 +17,7 @@ let getData = function(to) {
 export default {
   beforeRouteEnter (to, from, next) {
     getData(to).then((data) => {
-      next(vm => vm.setData(data))
+      next(vm => Object.assign(vm.$data, data))
     });
   }
 };
