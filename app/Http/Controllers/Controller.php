@@ -10,4 +10,17 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    /**
+     * Pack the state provided into an appropriate response for the request
+     * @param  array $state
+     * @return Illuminate\Http\JsonResponse|Illuminate\View\View
+     */
+    protected function pack($state)
+    {
+        if (request()->ajax()) {
+            return response()->json($state);
+        }
+        return view('app', compact('state'));
+    }
 }
