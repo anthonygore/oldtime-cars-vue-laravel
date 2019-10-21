@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+
 let getData = function(to) {
   return new Promise((resolve, reject) => {
     let initialState = JSON.parse(window.__INITIAL_STATE__) || {};

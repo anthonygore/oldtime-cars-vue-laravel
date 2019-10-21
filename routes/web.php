@@ -1,5 +1,5 @@
 <?php
 
-Route::get('/', 'CarController@home_web');
+Route::get('/', 'CarController@home');
 
-Route::get('/detail/{id}', 'CarController@detail_web');
+Route::get('/detail/{id}', 'CarController@detail');
